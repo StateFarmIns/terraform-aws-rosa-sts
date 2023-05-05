@@ -17,6 +17,7 @@ Terraform AWS ROSA STS
 |ocm_environment| string      | the OCM environments. The value should be one of those: production, staging, integration, local | "production"                                                                                                                                                                        |
 |account_role_policies| object      | account role policies details for account roles creation                                       | [an example can be found below](https://github.com/terraform-redhat/terraform-aws-rosa-sts/tree/use_data_source_for_account_policies/account_roles_creation#account_role_policies-object)  |
 |operator_role_policies| object      | operator role policies details for operator role policies creation                             | [an example can be found below](https://github.com/terraform-redhat/terraform-aws-rosa-sts/tree/use_data_source_for_account_policies/account_roles_creation#operator_role_policies-object) |
+|iam_role_permissions_boundary_arn| string     | ARN of a permissions boundary policy for the IAM Role | arn:aws:iam::123456789012:policy/XCompanyBoundaries |
 
 ### account_role_policies object
 `account_role_policies` is an object that holds the policy details for each account role. 

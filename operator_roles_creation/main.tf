@@ -14,4 +14,5 @@ module rosa_operator_roles {
     cluster_id = var.cluster_id
     rh_oidc_provider_url = var.rh_oidc_provider_url
     operator_role_properties = var.operator_roles_properties[count.index]
+    iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
 }

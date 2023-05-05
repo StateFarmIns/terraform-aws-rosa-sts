@@ -23,3 +23,9 @@ variable operator_roles_properties {
       error_message = "The list of operator roles should contains 6 elements."
     }
 }
+
+variable "iam_role_permissions_boundary_arn" {
+  description = "(Optional) ARN of a permissions boundary policy for the IAM Role"
+  type        = string
+  default     = ""
+}

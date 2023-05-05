@@ -14,6 +14,7 @@ module rosa_operator_roles {
     cluster_id = var.cluster_id
     rh_oidc_provider_url = var.rh_oidc_provider_url
     operator_roles_properties = var.operator_roles_properties
+    iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
 }
 
 module rosa_oidc_provider {
@@ -34,4 +35,5 @@ module rosa_account_roles {
     ocm_environment = var.ocm_environment
     account_role_policies = var.account_role_policies
     operator_role_policies = var.operator_role_policies
+    iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
 }

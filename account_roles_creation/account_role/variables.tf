@@ -28,3 +28,9 @@ variable rosa_openshift_version {
 variable account_id {
     type = string
 }
+
+variable "iam_role_permissions_boundary_arn" {
+  description = "(Optional) ARN of a permissions boundary policy for the IAM Role"
+  type        = string
+  default     = ""
+}

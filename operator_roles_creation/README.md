@@ -18,6 +18,7 @@ Terraform AWS ROSA STS
 |cluster_id| string      | Cluster ID                                                                                                                                         | "11111111111111111111111111111111"                                                                        |
 |rh_oidc_provider_url| string      | OIDC provider url                                                                                                                                  | "rh-oidc-staging.s3.us-east-1.amazonaws.com/11111111111111111111111111111111"                             |
 |operator_roles_properties| list of map | List of 6 items of ROSA Operator IAM Roles. Each item should contains: role_name, policy_name, service_accounts, operator_name, operator_namespace | can be found [below](https://github.com/terraform-redhat/terraform-aws-rosa-sts#get-clusters-information) |
+|iam_role_permissions_boundary_arn| string     | ARN of a permissions boundary policy for the IAM Role | arn:aws:iam::123456789012:policy/XCompanyBoundaries |
 
 ## Get OCM Information
 

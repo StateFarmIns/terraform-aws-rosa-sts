@@ -28,7 +28,7 @@ module operator_roles {
    create_operator_roles = true
    create_oidc_provider = false
    create_account_roles = false
-
+   iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
     cluster_id = var.cluster_id
     rh_oidc_provider_thumbprint = var.oidc_thumbprint
     rh_oidc_provider_url = var.oidc_endpoint_url

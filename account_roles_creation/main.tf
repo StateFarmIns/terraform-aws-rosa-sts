@@ -15,6 +15,7 @@ module rosa_account_roles {
     rosa_openshift_version = var.rosa_openshift_version
     account_role_properties = local.account_roles_properties[count.index]
     instance_account_role_properties = local.instance_account_roles_properties[count.index]
+    iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
     account_id = lookup({"production"="710019948333", "staging"="644306948063", "integration"="896164604406", "local"="765374464689"}, var.ocm_environment, "710019948333")
 }
 

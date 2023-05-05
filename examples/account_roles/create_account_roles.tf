@@ -15,7 +15,7 @@ module "create_account_roles"{
    create_operator_roles = false
    create_oidc_provider = false
    create_account_roles = true
-
+   iam_role_permissions_boundary_arn = var.iam_role_permissions_boundary_arn
    account_role_prefix = var.account_role_prefix
    ocm_environment = var.ocm_environment
 }

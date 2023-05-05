@@ -28,3 +28,9 @@ variable url {
     type = string
     default = "https://api.openshift.com"
 }
+
+variable "iam_role_permissions_boundary_arn" {
+  description = "(Optional) ARN of a permissions boundary policy for the IAM Role"
+  type        = string
+  default     = ""
+}
